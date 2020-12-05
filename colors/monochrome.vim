@@ -23,6 +23,7 @@ let s:sblue  = ['#a15d5a', 67]
 let s:yellow = ['Yellow', 226]
 let s:red    = ['#b6403a', 160]
 let s:green  = ['#478226', 28]
+let s:rose   = ['#d69794', 15]
 
 let s:default_fg = s:lgray
 let s:default_bg = s:black
@@ -115,12 +116,12 @@ call s:hi('SignColumn')
 " --- Programming languages ----------------------------------------------------
 "
 
-call s:hi('Statement', s:white, s:default_bg, s:bold)
-call s:hi('PreProc', s:white, s:default_bg, s:bold)
+call s:hi('Statement', s:rose, s:default_bg, s:bold)
+call s:hi('PreProc', s:rose, s:default_bg, s:bold)
 call s:hi('String', s:sblue)
 call s:hi('Comment', s:cgray, s:default_bg, s:comment_attr)
 call s:hi('Constant')
-call s:hi('Type', s:white, s:default_bg, s:bold)
+call s:hi('Type', s:rose, s:default_bg, s:bold)
 call s:hi('Function', s:white)
 call s:hi('Identifier')
 call s:hi('Special')
@@ -199,7 +200,7 @@ call s:hi('pythonEscape', s:sblue)
 " --- JavaScript ---------------------------------------------------------------
 "
 
-call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
+call s:hi('javaScriptFunction', s:rose, s:default_bg, s:bold)
 
 
 "
@@ -219,9 +220,9 @@ call s:hi('diffRemoved', s:white, s:red)
 " --- Markdown -----------------------------------------------------------------
 "
 
-call s:hi('Title', s:white, s:default_bg, s:bold)
-call s:hi('markdownHeadingDelimiter', s:white, s:default_bg, s:bold)
-call s:hi('markdownHeadingRule', s:white, s:default_bg, s:bold)
+call s:hi('Title', s:rose, s:default_bg, s:bold)
+call s:hi('markdownHeadingDelimiter', s:rose, s:default_bg, s:bold)
+call s:hi('markdownHeadingRule', s:rose, s:default_bg, s:bold)
 call s:hi('markdownLinkText', s:sblue, s:default_bg, s:underline)
 
 
@@ -232,7 +233,7 @@ call s:hi('markdownLinkText', s:sblue, s:default_bg, s:underline)
 call s:hi('gitcommitComment', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitOnBranch', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitBranch', s:sblue, s:default_bg, s:none)
-call s:hi('gitcommitHeader', s:white, s:default_bg, s:bold)
+call s:hi('gitcommitHeader', s:rose, s:default_bg, s:bold)
 call s:hi('gitcommitSelected', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitDiscarded', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitSelectedType', s:default_fg, s:default_bg, s:none)
